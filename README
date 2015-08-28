@@ -7,7 +7,7 @@
 
 #install_dir/chmod -R 775 .
 
-// ===============================================================================
+// ===========================================================================
 
 // required to protect page
 $sumo_root = $_SERVER['DOCUMENT_ROOT'] .'/sumo/sumo.php'; 
@@ -23,3 +23,14 @@ sumo_verify_permissions($level, $group, $user)
 This function returns true if all required conditions are satisfied, otherwise returns false	
 */
 var_dump(sumo_verify_permissions(3,'edit_readings'));
+
+// ===========================================================================
+
+SUMO class has the following:
+[DB]
+[config]
+[client]
+[server]
+[page]
+[user]
+[connection]
