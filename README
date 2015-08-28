@@ -1,0 +1,14 @@
+// required to protect page
+$sumo_root = $_SERVER['DOCUMENT_ROOT'] .'/sumo/sumo.php'; 
+require($sumo_root);
+
+/*
+sumo_verify_permissions($level, $group, $user) 
+	
+	$level    Accept numbers from 1 to 7
+	$group    Accept string or array
+	$user     Accept string (optional)
+
+This function returns true if all required conditions are satisfied, otherwise returns false	
+*/
+var_dump(sumo_verify_permissions(3,'edit_readings'));
