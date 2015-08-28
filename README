@@ -1,3 +1,14 @@
+// Initial directory permissions setup
+
+// to give the httpd account daemon the required access
+// the following is required performed as root
+
+#install_dir/chgrp -R daemon .
+
+#install_dir/chmod -R 775 .
+
+// ===============================================================================
+
 // required to protect page
 $sumo_root = $_SERVER['DOCUMENT_ROOT'] .'/sumo/sumo.php'; 
 require($sumo_root);
